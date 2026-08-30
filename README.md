@@ -18,17 +18,3 @@ src/
 │   └── Parent.java
 └── Main.java
 
-#  Concepts Covered
-1. Abstract Method
-An abstract method is a method that has no implementation. It defines what should be done, while the child class defines how it should be done.
-
-abstract class Animal {
-    abstract void sound();
-}
-
-class Dog extends Animal {
-    @Override
-    void sound() {
-        System.out.println("Dog barks");
-    }
-}
