@@ -17,4 +17,8 @@ src/
 │   ├── MyInterface.java
 │   └── Parent.java
 └── Main.java
+Static Method
+Lambda Function
+
+
 
