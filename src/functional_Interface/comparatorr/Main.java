@@ -12,7 +12,7 @@ public class Main {
         list.add(20);
         list.add(13);
         list.add(34);
-        Collections.sort(list);
+        Collections.sort(list, new MyClass());
         System.out.println(list);
     }
 }
