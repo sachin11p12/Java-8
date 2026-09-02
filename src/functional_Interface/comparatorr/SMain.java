@@ -11,5 +11,10 @@ public class SMain {
         s.add(24);
         s.add(8);
         System.out.println("Before Manual sorting " + s);
+        Set<Integer>  ss = new TreeSet<>((a,b) -> b-a);
+        ss.add(12);
+        ss.add(56);
+        ss.add(3);
+        System.out.println("After manual sorting desc : "+ ss);
     }
 }
