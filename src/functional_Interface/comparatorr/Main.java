@@ -12,7 +12,8 @@ public class Main {
         list.add(20);
         list.add(13);
         list.add(34);
-        Collections.sort(list, (a,b) -> a-b);   // Collections.sort(list, new MyClass());
+//        Collections.sort(list, (a,b) -> a-b);   // Collections.sort(list, new MyClass());
+        Collections.sort(list, (q,w) -> w-q); // mean we can use any objects
         System.out.println(list);
     }
 }
