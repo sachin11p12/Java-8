@@ -4,8 +4,10 @@ import java.util.function.Predicate;
 
 public class SecMainn {
     public static void main(String[] args) {
-        Predicate<String> startWithV = x -> x.toLowerCase().charAt(0) == 'v';
-        System.out.println(startWithV.test("Sachin"));
+        Predicate<String> startWithS = x -> x.toLowerCase().charAt(0) == 's';
+        Predicate<String> endWithN = x -> x.toLowerCase().charAt(x.length()-1) == 'n';
+        Predicate<String> and = startWithS.and(endWithN);
+        System.out.println(and.test("Sachin"));
 
     }
 }
