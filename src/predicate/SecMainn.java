@@ -13,7 +13,9 @@ public class SecMainn {
 //        Predicate<String> or = startWithS.or(endWithN);
 //        System.out.println(or.test("Nitin"));
         // - negate
-        System.out.println(startWithS.negate().test("aachin"));
+//        System.out.println(startWithS.negate().test("aachin"));
+
+        //  - Above all are default method
 
     }
 }
