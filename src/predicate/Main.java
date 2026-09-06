@@ -32,5 +32,13 @@ public class Main {
                 System.out.println(i);
             }
         }
+        System.out.println("-------------ii-----------------");
+        List<Integer> ele = Arrays.asList(1,2,3,4,5,6,7,8,9);
+        Predicate<Integer> odd = y -> y%2!=0;
+        for (Integer e : ele){
+            if (odd.test(e)){
+                System.out.println(e);
+            }
+        }
     }
 }
