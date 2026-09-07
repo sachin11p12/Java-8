@@ -1,5 +1,6 @@
 package predicate;
 
+import java.util.Objects;
 import java.util.function.Predicate;
 
 public class IsEqualP {
@@ -8,8 +9,10 @@ public class IsEqualP {
         Predicate<String> endW_N = x -> x.toLowerCase().charAt(x.length()-1) == 'n';
         Student s1 = new Student("Sachin", 1);
         Student s2 = new Student("Ram", 2);
-        Predicate<Student> studentPredicate = x -> x.getId() > 1;
-        System.out.println(studentPredicate.test(s2));
+//        Predicate<Student> studentPredicate = x -> x.getId() > 1;
+//        System.out.println(studentPredicate.test(s2));
+        Predicate<Object> predicate = Predicate.isEqual("Sachin");
+        System.out.println(predicate.test("Sachin"));
     }
 
 
