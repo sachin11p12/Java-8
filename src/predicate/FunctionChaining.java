@@ -7,7 +7,8 @@ public class FunctionChaining {
         Function<String, String> function1 = s -> s.toUpperCase();
         Function<String, String> function2 = s -> s.substring(0, 3);
 
-        Function<String, String> stringStringFunction = function1.andThen(function2);
-        System.out.println(stringStringFunction.apply("Sachin"));
+//        Function<String, String> stringStringFunction = function1.andThen(function2);
+        System.out.println(function1.andThen(function2).apply("Sachin"));
+//        System.out.println(stringStringFunction.apply("Sachin"));
     }
 }
