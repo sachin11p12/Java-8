@@ -154,4 +154,8 @@ java -cp out lambdaFunction.Main
 
 ---
 
+Today covered topis-
+Predicate - AND, OR, nagate and isEqual , what is Defaukt ans static methods in the Prediacte 
+Function - in FI - how to use apply(), andThen(),compose, identity() with proper exampl. 
+
 Happy Coding! 🚀
