@@ -11,8 +11,8 @@ public class IsEqualP {
         Student s2 = new Student("Ram", 2);
 //        Predicate<Student> studentPredicate = x -> x.getId() > 1;
 //        System.out.println(studentPredicate.test(s2));
-        Predicate<Object> predicate = Predicate.isEqual("Sachin");
-        System.out.println(predicate.test("Sachin"));
+        Predicate<Object> predicate = Predicate.isEqual(4);
+        System.out.println(predicate.test(7));
     }
 
 
