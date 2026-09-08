@@ -9,7 +9,7 @@ public class Identity_Function {
 //        System.out.println(function3.andThen(function4).apply(3));
 //        System.out.println(function4.andThen(function3).apply(3));
 
-        Function<String, String> identityFunction = Function.identity();
+        Function<String, String> identityFunction = Function.identity();  // it will clearly use in stream
         System.out.println(identityFunction.apply("Sachin"));
     }
 }
