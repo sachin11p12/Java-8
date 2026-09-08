@@ -1,0 +1,11 @@
+package predicate;
+
+import java.util.function.Function;
+
+public class Identity_Function {
+    public static void main(String[] args) {
+        Function<Integer, Integer> function3 = x -> 2*x;
+        Function<Integer, Integer> function4 = x -> x*x*x;
+        System.out.println(function3.andThen(function4).apply(3));
+    }
+}

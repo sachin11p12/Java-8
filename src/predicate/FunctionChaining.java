@@ -16,6 +16,6 @@ public class FunctionChaining {
         System.out.println(function1.andThen(function2).apply(3));  //216
 //        System.out.println(function2.andThen(function1).apply(3));
 
-        System.out.println(function1.compose(function2).apply(3)); //54
+        System.out.println(function1.compose(function2).apply(3)); //54w
     }
 }
