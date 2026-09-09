@@ -8,4 +8,5 @@ public class BiPredicate {
         BiPredicate<Integer, Integer> biPredicate = (x,y) -> x%2 == 0  &&  y%2 == 0;
         System.out.println(biPredicate.test(2,4));
     }
+
 }
