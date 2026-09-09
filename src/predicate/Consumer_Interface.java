@@ -14,6 +14,14 @@ public class Consumer_Interface {
             }
         };
 //        consumer.accept("Sachin");
-        listConsumer.accept(Arrays.asList(1,2,4,5));
+//        listConsumer.accept(Arrays.asList(1,2,4,5));
+
+        Consumer<List<Integer>> listConsumer1 = li -> {
+            for (Integer i : li){
+                System.out.println(i);
+            }
+        };
+        Consumer<List<Integer>> listConsumerUsedAndThen = listConsumer1.andThen(listConsumer);
+        listConsumerUsedAndThen.accept(Arrays.asList(1,2,3,4));
     }
 }
