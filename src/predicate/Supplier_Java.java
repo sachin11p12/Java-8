@@ -15,5 +15,9 @@ public class Supplier_Java {
         Consumer<Integer> consumer = x -> System.out.println(x);
         Supplier<Integer> supplier = () -> 100;
 
+        if (predicate.test(supplier.get())){
+            consumer.accept(function.apply(supplier.get()));
+        }
+
     }
 }
