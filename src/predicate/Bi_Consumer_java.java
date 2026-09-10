@@ -14,5 +14,7 @@ public class Bi_Consumer_java {
             System.out.println(x+y);
         };
         biConsumer.accept(2,90);
+
+        //There is no concept of BiSupplier , because anything retrun only one value so only supplier concept.
     }
 }
