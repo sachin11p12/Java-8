@@ -4,7 +4,11 @@ import java.util.function.*;
 public class BiPredicate_Java {
     public static void main(String[] args) {
         // it is used to let 2 numbers, string that give boolean output
-        BiPredicate<Integer, Integer> biPredicate = (x, y) -> x%2 == 0  &&  y%2 == 0;
-        System.out.println(biPredicate.test(2,4));
+//        BiPredicate<Integer, Integer> biPredicate = (x, y) -> x%2 == 0  &&  y%2 == 0;
+//        System.out.println(biPredicate.test(2,4));
+        BiPredicate<String, Integer> biPredicate = (str,x) -> str.length() == x;
+        System.out.println(biPredicate.test("Sachin", 6));
+
+
     }
 }
