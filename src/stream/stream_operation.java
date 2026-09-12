@@ -28,6 +28,7 @@ public class stream_operation {
                 .distinct()
                 .sorted((a,b) -> (b-a))
                 .limit(2)
+                .skip(1)
                 .collect(Collectors.toList());
         System.out.println(customSorting);
     }
