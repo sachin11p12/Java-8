@@ -1,6 +1,5 @@
-package predicate;
+package predicate_Function_Consumer_Supplier;
 
-import java.util.Objects;
 import java.util.function.Predicate;
 
 public class IsEqualP {

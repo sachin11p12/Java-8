@@ -1,4 +1,4 @@
-package predicate;
+package predicate_Function_Consumer_Supplier;
 import java.util.function.*;
 
 public class BiPredicate_Java {

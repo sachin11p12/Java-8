@@ -1,7 +1,6 @@
-package predicate;
+package predicate_Function_Consumer_Supplier;
 
 import java.util.function.BiConsumer;
-import java.util.function.Consumer;
 
 public class Bi_Consumer_java {
     public static void main(String[] args) {
