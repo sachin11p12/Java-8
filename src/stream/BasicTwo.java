@@ -16,5 +16,10 @@ public class BasicTwo {
 
         //How directly use stream without converting
         Stream<Integer> integerStream = Stream.of(1,2,3);
+
+        // create stream with iterate and limit
+        Stream<Integer> limit = Stream.iterate(0, n->n+1).limit(50); // seed- starting value, limit - ending
+//        limit.forEach(System.out::println); // :: is method reference operator here
+        limit.filter(n->n%2==0).forEach(System.out::println);
     }
 }
