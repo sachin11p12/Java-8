@@ -27,6 +27,7 @@ public class stream_operation {
                 .map(x -> x / 2)
                 .distinct()
                 .sorted((a,b) -> (b-a))
+                .limit(2)
                 .collect(Collectors.toList());
         System.out.println(customSorting);
     }
