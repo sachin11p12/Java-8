@@ -19,6 +19,15 @@ public class stream_operation {
 
         // now if we need sorted
         List<Integer> sortedList = filterList.stream().map(x -> x / 2).distinct().sorted().collect(Collectors.toList());
-        System.out.println(sortedList);
+//        System.out.println(sortedList);
+
+        // now custom sorting if i wanna asc or desc
+        List<Integer> customSorting = filterList.stream()
+                .filter(n -> n%2 == 0)
+                .map(x -> x / 2)
+                .distinct()
+                .sorted((a,b) -> (b-a))
+                .collect(Collectors.toList());
+        System.out.println(customSorting);
     }
 }
