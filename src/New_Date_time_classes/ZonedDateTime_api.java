@@ -11,8 +11,12 @@ public class ZonedDateTime_api {
         ZonedDateTime zone = ZonedDateTime.now();
 //        System.out.println(zone);
         Set<String> availableZoneIds = ZoneId.getAvailableZoneIds();
-
-        System.out.println(availableZoneIds);
-
+//        System.out.println(availableZoneIds);
+//        availableZoneIds.forEach(System.out::println);
+//         to print india and newyork time
+        ZonedDateTime indiaTime = ZonedDateTime.now();
+        System.out.println("Currentn time in india" + indiaTime);
+        ZonedDateTime newYorkTime = ZonedDateTime.now(ZoneId.of("America/New_York"));
+        System.out.println("Current time in America"+newYorkTime);
     }
 }
