@@ -23,6 +23,15 @@ public class Basics {
 //        System.out.println(month);
 //        System.out.println(year);
 
+        LocalDate today = LocalDate.now();
+        LocalDate customDate = LocalDate.of(2001, 12, 12);
+        LocalDate localDate = today.minusDays(1);
+
+        LocalDate pastDate = today.minusMonths(100);
+        System.out.println(localDate);
+        System.out.println(pastDate);
+
+
 
 
     }
