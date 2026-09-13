@@ -9,5 +9,7 @@ public class LocalTime_Basic_opeartion {
         String timeInString = "14:30:45";
         LocalTime parsedTime = LocalTime.parse(timeInString);
         System.out.println(parsedTime);
+
+        // there are multiple opeartion which in Time also same like in LocalDate !
     }
 }
