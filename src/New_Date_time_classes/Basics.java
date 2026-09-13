@@ -11,16 +11,19 @@ public class Basics {
 //        To overcome these limitations, Java 8 introduced the java.time Date and Time API, which provides immutable, thread-safe,
 //        and easier-to-use classes.
 
-        LocalDate now = LocalDate.now();
-        System.out.println(now);
-        LocalDate myDob = LocalDate.of(2001, 12, 12);
+//        LocalDate now = LocalDate.now();
+//        System.out.println(now);
+//        LocalDate myDob = LocalDate.of(2001, 12, 12);
+//
+//        int dayofMonth = now.getDayOfMonth();
+//        System.out.println(dayofMonth);
+//        Month month = now.getMonth();
+//        int month = now.getMonthValue();
+//        int year = now.getYear();
+//        System.out.println(month);
+//        System.out.println(year);
 
-        int dayofMonth = now.getDayOfMonth();
-        System.out.println(dayofMonth);
-        Month month = now.getMonth();
-        int year = now.getYear();
-        System.out.println(month);
-        System.out.println(year);
+
 
     }
 }
